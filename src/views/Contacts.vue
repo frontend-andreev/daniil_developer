@@ -136,7 +136,6 @@ export default {
           });
       } catch (error) {
         this.isLoading = false
-        console.log({ error });
       }
       // Reset form field
       this.name = "";

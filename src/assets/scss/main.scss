@@ -1,0 +1,33 @@
+// Fonts
+
+@font-face {
+  font-family: 'Italiana';
+  src: url('../fonts/Italiana-Regular.woff2') format('woff2'),
+      url('../fonts/Italiana-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+      url('../fonts/Inter-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+// Null
+@import "./null.scss";
+
+// Components
+@import "./components/common.scss";
+@import "./components/header.scss";
+@import "./components/mainPage.scss";
+@import "./components/bookSlider.scss";
+@import "./components/contacts.scss";
+
+// Variables
+@import "./variables"

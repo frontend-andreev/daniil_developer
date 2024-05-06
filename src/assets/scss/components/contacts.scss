@@ -1,0 +1,242 @@
+.contacts__title {
+  * {
+    font-family: "Italiana";
+  }
+  position: relative;
+  h3 {
+    font-size: 16rem;
+    color: #4B526B;
+    font-weight: 400;
+    line-height: 250px;
+  }
+  span {
+    position: absolute;
+    right: 0;
+    bottom: -60%;
+    font-size: 11rem;
+    color: #686868;
+    font-weight: 400;
+  }
+}
+.contacts__content {
+  position: relative;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.contacts__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #3E4C81;
+}
+.contacts__form .button {
+  width: 100%;
+}
+.contacts__field {
+  position: relative;
+}
+.contacts__field:not(:last-child) {
+  margin-bottom: 70px ;
+}
+.contacts__input {
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  border-bottom: 1px solid #686868;
+  background: transparent;
+}
+.contacts__error {
+  position: absolute;
+
+  color: #cc0033;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+}
+.contacts__feedback {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__social h5 {
+  font-size: 24px;
+  color: #4B526B;
+  text-transform: uppercase;
+}
+
+.contacts__social a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #686868;
+  margin-top: 15px;
+  &:hover {
+    color: #878787
+  }
+}
+
+.contacts__social:last-child {
+  text-align: right;
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.contacts__feedback {
+  position: relative;
+}
+
+.contacts__feedback img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  align-self: center;
+}
+
+.contacts__loading {
+  width: 60px !important;
+  text-align: center;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+  .contacts__title {
+    h3 {
+      line-height: 150px;
+      font-size: 11rem;
+    }
+    span {
+      font-size: 7rem;
+    }
+  }
+  .contacts__social {
+    h5 {
+      font-size: 16px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 690px) {
+  .contacts__error {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 690px) and (max-width: 850px) {
+  .contacts__title {
+    h3 {
+      line-height: 120px;
+      font-size: 8.1rem;
+    }
+    span {
+      font-size: 5.5rem;
+    }
+  }
+  .contacts__social {
+    h5 {
+      font-size: 16px;
+    }
+    a {
+      font-size: 13px;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 690px) {
+  .contacts__form {
+    padding: 16px 10px;
+  }
+  .contacts__field:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .contacts__form input {
+    font-size: 14px;
+    padding-bottom: 7px;
+  }
+  .contacts__title {
+    h3 {
+      line-height: 90px;
+      font-size: 6.7rem;
+    }
+    span {
+      font-size: 4.1rem;
+    }
+  }
+  .contacts__feedback {
+    img {
+      width: 90%;
+    }
+  }
+  .contacts__social {
+    h5 {
+      font-size: 14px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) {
+  .contacts__title {
+    h3 {
+      font-size: 6rem !important;
+      line-height: 90px !important;
+    }
+    span {
+      font-size: 4rem !important;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .contacts__content {
+    grid-template-columns: 1fr;
+  }
+  .contacts__title {
+    h3 {
+      line-height: 60px;
+      font-size: 4rem;
+    }
+    span {
+      font-size: 2.4rem;
+    }
+  }
+  .contacts__field:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .contacts__feedback img {
+    display: none;
+  }
+  .contacts__info {
+    display: flex;
+  }
+  .contacts__form {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__input {
+    font-size: 13px;
+    padding-bottom: 0px;
+  }
+  .contacts__social {
+    h5 {
+      font-size: 13px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+}

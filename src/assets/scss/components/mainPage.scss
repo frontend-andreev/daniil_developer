@@ -1,0 +1,200 @@
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    &__title {
+        h1, span {
+            font-family: "Italiana";
+        }
+        position: relative;
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        // display: inline-block;
+        h1 {
+            display: inline-flex;
+            flex-direction: column;
+            font-size: 18em;
+            line-height: 1em;
+            color: var(--titleColor);
+            // margin-bottom: 150px;
+        }
+        span {
+            font-size: 7em;
+            line-height: 1em;
+            color: var(--defaultTextColor);
+            text-align: right;
+        }
+    }
+    &__description {
+        position: absolute;
+        max-width: 325px;
+        color: var(--defaultTextColor);
+        font-size: var(--mediumText);
+        line-height: 19.36px;
+        opacity: 91%;
+
+        &:first-child {
+            bottom: 0;
+            left: 0;
+        }
+        &:nth-child(2) {
+            right: 0;
+            bottom: -40%;
+        }
+        &_mobile {
+            display: none;
+        }
+    }
+    &__substrate {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+        border-radius: 21px;
+        margin-bottom: 80px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &__feedback {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__image {
+        align-self: end;
+        object-fit: cover;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1330px) {
+        &__title h1 {
+            font-size: 18vw;
+        }
+        &__title span {
+            font-size: 7vw;
+        }
+        &__description:first-child {
+            bottom: 0;
+        }
+        &__image {
+            transform: translateY(20px);
+        }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        &__title {
+            align-items: center;
+        }
+        &__description:first-child {
+            max-width: 230px;
+            bottom: -10%;
+        }
+        &__description:nth-child(2) {
+            right: 25%;
+            bottom: -36%;
+        }
+        &__image {
+            position: absolute;
+            max-width: 220px;
+            right: 0;
+            bottom: 10%;
+        }
+        &__title h1 {
+            font-size: 25vw;
+        }
+        &__substrate {
+            width: 76%;
+        }
+        &__image {
+            transform: translateY(30px);
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+        &__title {
+            align-items: center;
+            margin-bottom: 28px;
+            span {
+                font-size: 5em;
+            }
+        }
+        &__description {
+            display: none;
+        }
+        &__description_mobile {
+            display: block !important;
+            margin-top: 10px;
+            position: static;
+            max-width: 70%;
+        }
+        &__image {
+            position: absolute;
+            max-width: 190px;
+            right: 0;
+            bottom: 8%;
+        }
+        &__title h1 {
+            font-size: 25vw;
+        }
+        &__substrate {
+            width: 70%;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__title {
+            span {
+                font-size: 4em;
+            }
+        }
+        &__description {
+            font-size: 13px;
+        }
+        &__image {
+            max-width: 25%;
+            bottom: 10%;
+        }
+    &__substrate {
+        img {
+            width: 23px;
+            height: 23px;
+        } 
+    }
+    }
+    @media screen and (min-width: 478px) and (max-width: 600px) {
+        &__image {
+            bottom: 20%;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 477px) {
+        &__title {
+            h1 {
+                font-size: 20vw;
+            }
+            span {
+                font-size: 3em;
+            }
+        }
+        &__description {
+            width: 45%;
+        }
+        &__image {
+            max-width: 120px;
+            bottom: 40%;
+        }
+        &__feedback {
+            flex-direction: column;
+            align-items: start;
+            row-gap: 12px;
+            button {
+                width: 100%;
+            }
+        }
+        &__substrate {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+

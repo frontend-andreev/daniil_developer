@@ -13,7 +13,7 @@
             v-for="item in projects"
             :key="item.id"
           >
-            <img :src="`../public/${item.photo}`" alt="" />
+            <img :src="`../${item.photo}`" alt="" />
             <div class="book-slider__overlay"></div>
             <a
               target="_blank"
